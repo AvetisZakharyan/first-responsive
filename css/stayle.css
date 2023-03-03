@@ -1,0 +1,444 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+}
+body{
+    position: relative;
+}
+/**====================LOAD===================**/
+
+.load{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(17, 51, 51);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999 ;
+    animation: loading 4s linear  1  forwards;
+}
+
+
+/**====================HEADER=================**/
+
+.headerflex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.divborder{
+    border: 3px solid rgb(163, 1, 1);
+    width: 80px;
+    margin-bottom: 20px;
+   
+}
+
+h1{
+    font-size: 48px;
+    padding-top: 50px;
+    margin-bottom: 30px;
+}
+.headerdiv p{
+    text-align: center;
+    
+    width: 650px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+/**=====================SECTION======================**/
+
+.secgrid{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 10px;
+    position: relative;
+    margin-bottom: 100px;
+    
+}
+.secgrid div{
+    background-color: #292d33;
+}
+.card1{
+    grid-row: 1/3;
+    display: flex;
+   
+}
+.card2,.card3,.card4,.card5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 0px 20px;
+}
+.card2>h2{
+    font-size: 24px;
+    color: rgb(124, 124, 123);
+   
+}
+.card2>p{
+    font-size: 20px;
+    margin: 30px 0px;
+    color: white;
+}
+.icons>i{
+    display: inline-block;
+    font-size: 25px;
+    padding: 10px;
+    color: white;
+}
+.card3>i{
+    display: inline-block;
+    font-size: 40px;
+    color: rgb(207, 206, 206);
+     
+    height: 110px;
+    width: 110px;
+    padding: 30px;
+    border: 3px solid rgb(228, 225, 225);
+    border-radius: 100%;
+    animation-name: loc;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+    
+}
+.card3>h2{
+    font-size: 24px;
+    color: rgb(124, 124, 123);
+    margin: 20px 0;
+
+}
+.card3>p{
+    font-size: 18px;   
+    color: white;
+}
+.card4>i{
+    display: inline-block;
+    font-size: 40px;
+    color: rgb(207, 206, 206);     
+    height: 110px;
+    width: 110px;
+    padding: 30px;
+    border: 3px solid rgb(228, 225, 225);
+    border-radius: 100%;
+
+}
+.card4>h2{
+    font-size: 24px;
+    color: rgb(124, 124, 123);
+    margin: 20px 0
+}
+.card4>a{
+    display: inline-block;
+    line-height: 20px;
+    color: white;
+    font-size: 20px;
+}
+.card5>i{
+    display: inline-block;
+    font-size: 40px;
+    color: rgb(207, 206, 206);     
+    height: 110px;
+    width: 110px;
+    padding: 30px;
+    border: 3px solid rgb(228, 225, 225);
+    border-radius: 100%;
+    animation-name: call;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+   
+   
+}
+
+.card5>h2{
+    font-size: 24px;
+    color: rgb(124, 124, 123);
+    margin: 20px 0
+}
+.card5>p{
+    font-size: 18px;   
+    color: white;
+    line-height: 25px;
+    
+
+
+}
+span{
+   position: absolute;
+   bottom: -50px;
+   left: 43%;   
+   font-size: 19px;
+   
+}
+span a{
+    text-decoration: none;
+    color: rgb(1, 77, 1)   ;
+    font-weight: bold;
+
+}
+/**===================FOOTER================**/
+
+footer{
+   
+    background: #333333;
+}
+.footdiv{
+    padding: 50px 0px;
+    text-align: center;
+}
+.footdiv a{
+    display: inline-block;
+    color: #a9f8df;
+    font-size: 16px;
+
+}
+.footdiv >p{
+    color: white;
+    font-size: 16px;
+}
+
+
+
+
+
+@keyframes loading {
+    from{
+        opacity: 1;
+        visibility: visible;
+    }
+    10%{
+        opacity: 1;
+        visibility: visible;
+        background-color: rgb(17, 51, 51);
+
+    }
+    20%{
+        opacity: 1;
+        visibility: visible;
+        background-color: rgba(17, 51, 51, 0.897);
+
+    }
+    30%{
+        opacity: 1;
+        visibility: visible;
+        background-color: rgba(17, 51, 51, 0.76);
+
+    }
+    40%{
+        opacity: 1;
+        visibility: visible;
+        background-color: rgba(17, 51, 51, 0.726);
+
+    }
+    50%{
+        opacity: 1;
+        visibility: visible;
+        background-color: rgba(17, 51, 51, 0.623);
+
+    }
+    60%{
+        opacity: 0;
+        visibility: visible;
+        background-color: rgba(17, 51, 51, 0.486);
+
+    }
+    70%{
+        opacity: 0;
+        visibility: visible;
+        background-color: rgba(17, 51, 51, 0.219);
+
+    }
+    90%{
+        opacity: 0;
+        visibility: visible;
+        background-color: rgba(17, 51, 51, 0.103);
+
+    }
+
+
+   
+    to{
+        opacity: 0;
+        visibility: hidden ;
+        background-color: rgba(17, 51, 51, 0);
+
+    }
+    
+}
+
+@keyframes call {
+    0% {
+        transform:rotate3d(0, 0, 1, -3deg)
+      
+    }
+    10%,
+    20% {
+      
+      transform:rotate3d(0, 0, 1, -3deg)
+    }
+    30%,
+    50%,
+    70%,
+    90% {
+      
+      transform:rotate3d(0, 0, 1, 3deg)
+    }
+    40%,
+    60%,
+    80% {
+     
+      transform: rotate3d(0, 0, 1, -3deg)
+    }
+    100% {
+     
+        transform: rotate3d(0, 0, 1, -3deg)
+    }
+  }
+
+/**==================LOAD==============**/
+.looping-rhombuses-spinner, .looping-rhombuses-spinner * {
+    box-sizing: border-box;
+  }
+
+  .looping-rhombuses-spinner {
+    width: calc(15px * 4);
+    height: 15px;
+    position: relative;
+  }
+
+  .looping-rhombuses-spinner .rhombus {
+    height: 15px;
+    width: 15px;
+    background-color: #ff1d5e;
+    left: calc(15px * 4);
+    position: absolute;
+    margin: 0 auto;
+    border-radius: 2px;
+    transform: translateY(0) rotate(45deg) scale(0);
+    animation: looping-rhombuses-spinner-animation 2500ms linear infinite;
+  }
+
+  .looping-rhombuses-spinner .rhombus:nth-child(1) {
+    animation-delay: calc(2500ms * 1 / -1.5);
+  }
+
+  .looping-rhombuses-spinner .rhombus:nth-child(2) {
+    animation-delay: calc(2500ms * 2 / -1.5);
+  }
+
+  .looping-rhombuses-spinner .rhombus:nth-child(3) {
+    animation-delay: calc(2500ms * 3 / -1.5);
+  }
+
+  @keyframes looping-rhombuses-spinner-animation {
+    0% {
+      transform: translateX(0) rotate(45deg) scale(0);
+    }
+    50% {
+      transform: translateX(-233%) rotate(45deg) scale(1);
+    }
+    100% {
+      transform: translateX(-466%) rotate(45deg) scale(0);
+    }
+  }
+  
+  /**===============MEDIA================**/
+  @media all and  ( min-width:769px)  and ( max-width:1024px ) { 
+    .secgrid{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+       
+        
+
+    } 
+.card2,.card3,.card4,.card5{
+    width: calc(50% - 10px);
+    height: 300px;
+}
+    
+    
+  }
+
+
+
+  @media all and  ( min-width:481px)  and ( max-width:768px ) { 
+
+    .headerdiv > p{
+        width: 500px;
+        padding: 20px;
+        
+    }
+    span{
+        position: absolute;
+        bottom: -50px;
+        left: 37%;   
+        font-size: 19px;
+        
+     }
+    .secgrid{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+             
+        
+
+    } 
+
+.card2,.card3,.card4,.card5{
+    width: calc(50% - 10px);
+    height: 300px;
+}
+    
+    
+  }
+
+
+
+
+  @media all and  ( min-width:320px)  and ( max-width:480px ) { 
+
+    .headerdiv > p{
+        width: 300px;
+        padding: 20px;
+        
+    }
+    span{
+        position: absolute;
+        bottom: -50px;
+        left: 28%;   
+        font-size: 19px;
+        
+     }
+    .secgrid{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+             
+        
+
+    } 
+
+.card2,.card3,.card4,.card5{
+    width: 100%;
+    height: 300px;
+}
+    
+    
+  }
